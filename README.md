@@ -31,4 +31,9 @@ The node dependency we'll be working with will be [React Hexagon](https://github
 
 There isn't much on this other than the GitHub repository. The documentation is pretty limited, so there's going to be a lot of figuring out happening, but the demo site is promising as it is exactly what I need to get the job done.
 
-###
+### **2) Create Canva Account & Building the Object There**
+It was recommended by members of the Slack group chat that I also create objects in Canva, a UI Design website. The work that will come out of this will go into the components/Other/index.js file.
+
+Visit their website [here](https://www.canva.com/search/templates?q=hexagon).
+
+### **3) Konva**
