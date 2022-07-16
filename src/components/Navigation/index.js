@@ -7,6 +7,9 @@ import {
     Link
 } from 'react-router-dom';
 
+import Home from '../Home';
+import Other from '../Other';
+
 export default class Navigation extends Component {
     render() {
         return(
