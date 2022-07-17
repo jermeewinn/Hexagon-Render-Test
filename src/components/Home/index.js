@@ -20,14 +20,65 @@ function Home() {
             <div>
                 <h1>Home</h1>
             </div>
-            <div id='root' className='content'>
+            <div id='root' className='hex-row d-flex justify-content-center'>
                 {/* Hexagon needs to go here */}
                 <Hexagon
-                    style={{ stroke: 'black' }}
+                    className='hexagon-styled'
+                    style={{ 
+                        stroke: 'black',
+                        width: '25px' }}
+                    // flatTop="false"  
                 />
                 <Hexagon
-                    style={{ stroke: 'black' }}
-                    flatTop="true"
+                    className='hexagon-styled'
+                    style={{ 
+                        stroke: 'black',
+                        width: '25px' }}
+                    // flatTop="false" 
+                />
+            </div>
+            <div className='hex-row d-flex justify-content-center'>
+                <Hexagon
+                    className='hexagon-styled'
+                    style={{ 
+                        stroke: 'black',
+                        width: '25px' }}
+                    // flatTop="false"
+                    
+                />
+                <Hexagon
+                    className='hexagon-styled'
+                    style={{ 
+                        stroke: 'white',
+                        width: '25px' }}
+                    // flatTop="false"
+                    
+                />
+                <Hexagon
+                    className='hexagon-styled'
+                    style={{ 
+                        stroke: 'black',
+                        width: '25px' }}
+                    // flatTop="false"
+                    
+                />
+            </div>
+            <div className=' hex-row d-flex justify-content-center'>
+            <Hexagon
+                    className='hexagon-styled'
+                    style={{ 
+                        stroke: 'black',
+                        width: '25px' }}
+                    // flatTop="false"
+                    
+                />
+                <Hexagon
+                    className='hexagon-styled'
+                    style={{ 
+                        stroke: 'black',
+                        width: '25px' }}
+                    // flatTop="false"
+                    
                 />
             </div>
         </section>
