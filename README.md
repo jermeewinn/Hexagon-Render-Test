@@ -40,7 +40,7 @@ Visit their website [here](https://www.canva.com/search/templates?q=hexagon).
 ### **1) React Hexagon**
 After some help from friends, I was able to render not just a single hexagon, but also a full hexagon ring. 
 
-Firstly, in order to render a hexagon, you will need to set up your component to look like the following:
+**Firstly**, in order to render a hexagon, you will need to set up your component to look like the following:
 
         import React from 'react';
         import Hexagon from 'react-hexagon';
@@ -60,7 +60,8 @@ Firstly, in order to render a hexagon, you will need to set up your component to
                 );
         };
 
-This involves creating 3 div rows with two, three, and two hexagons, respectively. With the center hexagon set to white, the final render should look like the following screenshot:
+
+**Next** construct not 6, but 7 hexagons to create the hexagon ring. This involves creating 3 div rows with two, three, and two hexagons, respectively. With the center hexagon set to white, the final render should look like the following screenshot:
 
 ![Hexagont Ring](src/assets/Hexagon-Ring.png)
 
