@@ -26,15 +26,15 @@ function Home() {
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' }}
-                    // flatTop="false"  
+                        width: '25px' 
+                    }}
                 />
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' }}
-                    // flatTop="false" 
+                        width: '25px' 
+                    }}
                 />
             </div>
             <div className='hex-row d-flex justify-content-center'>
@@ -42,25 +42,24 @@ function Home() {
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' }}
-                    // flatTop="false"
+                        width: '25px'
+                    }}
+                    
                     
                 />
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'white',
-                        width: '25px' }}
-                    // flatTop="false"
-                    
+                        width: '25px' 
+                    }}
                 />
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' }}
-                    // flatTop="false"
-                    
+                        width: '25px' 
+                    }}                    
                 />
             </div>
             <div className=' hex-row d-flex justify-content-center'>
@@ -68,17 +67,15 @@ function Home() {
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' }}
-                    // flatTop="false"
-                    
+                        width: '25px' 
+                    }}                    
                 />
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' }}
-                    // flatTop="false"
-                    
+                        width: '25px' 
+                    }}
                 />
             </div>
         </section>
