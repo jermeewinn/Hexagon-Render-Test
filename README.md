@@ -48,10 +48,7 @@ Firstly, in order to render a hexagon, you will need to set up your component to
         function Hexagon() {
                 return(
                         <section>
-                                <div 
-                                        id='root' 
-                                        className 'hex-row d-flex justify-content-center'
-                                >
+                                <div id='root' className 'hex-row d-flex justify-content-center'>
                                         <Hexagon
                                                 className='hexagon-styled'
                                                 style={{
