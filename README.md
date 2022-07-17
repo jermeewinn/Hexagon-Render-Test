@@ -36,4 +36,4 @@ It was recommended by members of the Slack group chat that I also create objects
 
 Visit their website [here](https://www.canva.com/search/templates?q=hexagon).
 
-### **3) Konva**
+

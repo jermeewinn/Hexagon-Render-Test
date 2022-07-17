@@ -2,12 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Hexagon from 'react-hexagon';
 
-// React.render(
-//     ,
-//     document.getElementById('root')
-// );
-
-
 function Home() {
     
     return(
@@ -44,8 +38,6 @@ function Home() {
                         stroke: 'black',
                         width: '25px'
                     }}
-                    
-                    
                 />
                 <Hexagon
                     className='hexagon-styled'
