@@ -19,15 +19,13 @@ function Home() {
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
-                        stroke: 'black',
-                        width: '25px' 
+                        stroke: 'black', 
                     }}
                 />
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' 
                     }}
                 />
             </div>
@@ -36,21 +34,18 @@ function Home() {
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px'
                     }}
                 />
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'white',
-                        width: '25px' 
                     }}
                 />
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' 
                     }}                    
                 />
             </div>
@@ -59,14 +54,12 @@ function Home() {
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' 
                     }}                    
                 />
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
-                        width: '25px' 
                     }}
                 />
             </div>
