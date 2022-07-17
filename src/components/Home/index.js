@@ -50,7 +50,7 @@ function Home() {
                 />
             </div>
             <div className=' hex-row d-flex justify-content-center'>
-            <Hexagon
+                <Hexagon
                     className='hexagon-styled'
                     style={{ 
                         stroke: 'black',
