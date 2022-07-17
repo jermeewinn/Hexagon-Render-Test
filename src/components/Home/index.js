@@ -2,14 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Hexagon from 'react-hexagon';
 
-function Home() {
-    React.render(
-        <Hexagon
-            style={{ stroke: 'black' }}
-        />,
-        document.getElementById('root')
-    );
+// React.render(
+//     ,
+//     document.getElementById('root')
+// );
 
+
+function Home() {
+    
     return(
         <section>
             <div>
@@ -22,7 +22,13 @@ function Home() {
             </div>
             <div id='root' className='content'>
                 {/* Hexagon needs to go here */}
-                <svg></svg>
+                <Hexagon
+                    style={{ stroke: 'black' }}
+                />
+                <Hexagon
+                    style={{ stroke: 'black' }}
+                    flatTop="true"
+                />
             </div>
         </section>
     )
