@@ -21,7 +21,9 @@ function Home() {
                     style={{ 
                         stroke: 'black', 
                     }}
-                />
+                >
+                    <text x='50%' y='50%'>Resume Revision</text>
+                </Hexagon>
                 <Hexagon
                     className='hexagon-styled'
                     style={{ 
