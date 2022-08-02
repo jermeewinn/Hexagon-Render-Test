@@ -24,5 +24,10 @@ code {
 If margin-bottom was set to 0, the rows would appear tip-to-tip. */
 .hex-row {
   margin-bottom: -10px;
+}
 
+.hex-text {
+  font-size: 64px;
+  max-width: 70px;
+  text-align: center;
 }
