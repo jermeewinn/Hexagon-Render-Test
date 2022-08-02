@@ -25,15 +25,21 @@ function Home() {
                             stroke: 'black',
                         }}
                     >
-                        <text className='hex-text' x='20%' y='45%'>Resume</text>
-                        <text className='hex-text' x='23%' y='60%'>Review</text>
+                        <text className='hex-text' x='25%' y='45%'>Resume</text>
+                        <text className='hex-text' x='27%' y='60%'>Review</text>
                     </Hexagon>
                     <Hexagon
                         className='hexagon-styled'
                         style={{
                             stroke: 'black',
                         }}
-                    />
+                    >
+                        {/* <div className='hex-text'>
+                            <text x='20%' y='45%'>LinkedIn Revision</text>
+                        </div> */}
+                        <text className='hex-text' x='20%' y='45%'>LinkedIn Revision</text>
+                    </Hexagon>
+                    
                 </div>
                 <div className='hex-row d-flex justify-content-center'>
                     <Hexagon
