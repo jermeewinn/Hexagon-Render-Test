@@ -37,7 +37,8 @@ function Home() {
                         {/* <div className='hex-text'>
                             <text x='20%' y='45%'>LinkedIn Revision</text>
                         </div> */}
-                        <text className='hex-text' x='20%' y='45%'>LinkedIn Revision</text>
+                        <text className='hex-text' x='22%' y='45%'>LinkedIn</text>
+                        <text className='hex-text' x='22%' y='60%'>Revision</text>
                     </Hexagon>
                     
                 </div>
