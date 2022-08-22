@@ -34,13 +34,9 @@ function Home() {
                             stroke: 'black',
                         }}
                     >
-                        {/* <div className='hex-text'>
-                            <text x='20%' y='45%'>LinkedIn Revision</text>
-                        </div> */}
                         <text className='hex-text' x='22%' y='45%'>LinkedIn</text>
                         <text className='hex-text' x='22%' y='60%'>Revision</text>
                     </Hexagon>
-                    
                 </div>
                 <div className='hex-row d-flex justify-content-center'>
                     <Hexagon
@@ -48,7 +44,11 @@ function Home() {
                         style={{
                             stroke: 'black',
                         }}
-                    />
+                    >
+                        <text className='hex-text' x='27%' y='45%'>Career</text>
+                        <text className='hex-text' x='17%' y='60%'>Consulting</text>
+                    </Hexagon>
+                    {/* This will be the white Hexagon */}
                     <Hexagon
                         className='hexagon-styled'
                         style={{

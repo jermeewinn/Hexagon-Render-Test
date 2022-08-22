@@ -1,7 +1,18 @@
-# Hexagon Render Test
+# **Hexagon Render Test**
 This React Application is to test how to create, render, and style Hexagonal polygons in the extreme off-change one needs to render hexagons into their React web application. 
 
-## Technologies Used
+## **Table of Contents**
+[Technologies Used](#technologies-used)</br>
+[Installation](#installation)</br>
+[Methods](#methods)</br>
+[Notes to Self](#notes-to-self)</br>
+[Future Development](#future-development)</br>
+- [React Hexagon](#1-react-hexagon-1)</br>
+- [Canva](#2-canva)</br>
+
+[Author](#author)
+
+## **Technologies Used**
 - [React.js](https://reactjs.org/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [React-Router-DOM](https://v5.reactrouter.com/web/guides/quick-start)
@@ -9,7 +20,7 @@ This React Application is to test how to create, render, and style Hexagonal pol
 - [React-Helmet](https://github.com/nfl/react-helmet)
 - [React Hexagon](https://github.com/rexxars/react-hexagon)
 
-## Installation
+## **Installation**
 If you want to recreate this repository for your own purposes, simply follow the following steps in your Text Editor:
 1) Create a directory on your machine, open terminal, and clone the repository:
 
@@ -27,7 +38,7 @@ If you want to recreate this repository for your own purposes, simply follow the
 
         $npm run start
 
-## Methods
+## **Methods**
 ### **1) React Hexagon**
 The node dependency we'll be working with will be [React Hexagon](https://github.com/rexxars/react-hexagon).
 
@@ -36,7 +47,7 @@ There isn't much on this other than the GitHub repository. The documentation is 
 ### **2) Create Canva Account & Building the Object There**
 It was recommended by members of the Slack group chat that I also create objects in Canva, a UI Design website. Visit their website [here](https://www.canva.com/search/templates?q=hexagon).
 
-## Notes to Self
+## **Notes to Self**
 ### **1) React Hexagon**
 After some help from friends, I was able to render not just a single hexagon, but also a full hexagon ring. 
 
@@ -65,16 +76,18 @@ After some help from friends, I was able to render not just a single hexagon, bu
 
 ![Hexagont Ring](src/assets/Hexagon-Ring.png)
 
-It is best if you styled not just each row, but also each individual hexagoon. In the screenshot, the min-width styling is set to 250px. If you want to change the size of the hexagons while maintaining consistent spacing between each hexagon, you will need to change the width, min-width in the **.hexagon-style**, and the margin-bottom values in the **.hex-row** className values. 
+It is best if you styled not just each row, but also each individual hexagon. In the screenshot, the min-width styling is set to 250px. If you want to change the size of the hexagons while maintaining consistent spacing between each hexagon, you will need to change the width, min-width in the **.hexagon-style**, and the margin-bottom values in the **.hex-row** className values. 
 
 Additionally, the **.hex-row** margin-bottom value is negative so that the hexagon rows can slightly overlap each other. If set to greater than/equal to 0, then the rows would align at the hexagons' points.
+
+
 
 ### **2) Canva**
 Canva could be a good alternative to work with *if* you pay for their pro subscription. Otherwise, their free options are pretty limited, especially working with Hexagons. This would be useful if one were more concentrated on creating UX/UI elements, and if you had money to go with it.
 
-## Future Development
+## **Future Development**
 - Figure out a way to add pictures, text, clickable text, etc. to individual Hexagons. 
 - Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object.
 
-## Author
+## **Author**
 This application was created by [Jeremy Huynh](https://www.linkedin.com/in/jeremy-huynh/). For inquries, please reach out at jeahuynh18@gmail.com.
