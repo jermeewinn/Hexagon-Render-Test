@@ -60,7 +60,10 @@ function Home() {
                         style={{
                             stroke: 'black',
                         }}
-                    />
+                    >
+                        <text className='hex-text' x='25%' y='45%'>Interview</text>
+                        <text className='hex-text' x='35%' y='60%'>Prep</text>
+                    </Hexagon>
                 </div>
                 <div className=' hex-row d-flex justify-content-center'>
                     <Hexagon
@@ -68,13 +71,19 @@ function Home() {
                         style={{
                             stroke: 'black',
                         }}
-                    />
+                    >
+                        <text className='hex-text' x='15%' y='45%'>Job Search</text>
+                        <text className='hex-text' x='25%' y='60%'>Strategy</text>
+                    </Hexagon>
                     <Hexagon
                         className='hexagon-styled'
                         style={{
                             stroke: 'black',
                         }}
-                    />
+                    >
+                        <text className='hex-text' x='35%' y='45%'>View</text>
+                        <text className='hex-text' x='42%' y='60%'>All</text>
+                    </Hexagon>
                 </div>
             </container>
         </section>

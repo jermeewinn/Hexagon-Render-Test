@@ -115,7 +115,7 @@ Notice that we are now inputing text into the Hexagon, so the Hexagon object won
 
 If you were to check out the code in **src/components/Home/index.js**, you will see the variance in X- and Y-values with different sized words for each hexagon. 
 
-**IMPORTANT NOTE** Don't forget to style the hexagon text, otherwise the text within the hexagons would appear microscopic.
+**IMPORTANT NOTE:** Don't forget to style the hexagon text, otherwise the text within the hexagons would appear microscopic.
 
 ### **3) Canva**
 Canva could be a good alternative to work with *if* you pay for their pro subscription. Otherwise, their free options are pretty limited, especially working with Hexagons. This would be useful if one were more concentrated on creating UX/UI elements, and if you had money to go with it.
