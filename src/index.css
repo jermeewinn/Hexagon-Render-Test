@@ -12,14 +12,21 @@ code {
     monospace;
 }
 
+/* .banner {
+  margin-bottom: 100px;
+} */
+
+.hex-ring {
+  margin-top: 50px;
+}
 
 .hexagon-styled {
   width: 100px;
   margin-left: 25px;
   min-width: 100px;
   max-width: 250px;
-  
 }
+
 /* margin-bottom is set to a negative value so that the hexagon rows can overlap.
 If margin-bottom was set to 0, the rows would appear tip-to-tip. */
 .hex-row {

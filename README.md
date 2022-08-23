@@ -1,6 +1,8 @@
 # **Hexagon Render Test**
 
-This React Application is to test how to create, render, and style Hexagonal polygons in the extreme off-change one needs to render hexagons into their React web application. Credit to rexxars and rplanelles for creating the react-hexagon repository. Link under **Technologies Used**.
+This React Application is to test how to create, render, and style Hexagonal polygons in the extreme off-change one needs to render hexagons into their React web application.</br> 
+
+Credit to rexxars and rplanelles for creating the [React-Hexagon GitHub repository](https://github.com/rexxars/react-hexagon). This was really helpful in helping me figure out how to render hexagons.
 
 ## **Table of Contents**
 **[Technologies Used](#technologies-used)</br>**

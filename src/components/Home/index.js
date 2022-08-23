@@ -6,7 +6,7 @@ function Home() {
     
     return(
         <section>
-            <container id='identification'>
+            <container id='identification' className='banner'>
                 <div>
                     <Helmet>
                         <title>Hexagon Render Test | Home</title>
@@ -16,7 +16,7 @@ function Home() {
                     <h1>Home</h1>
                 </div>
             </container>
-            <container id='hex-ring' className='hex-ring'>
+            <div id='hex-ring' className='hex-ring'>
                 <div id='root' className='hex-row d-flex justify-content-center'>
                     {/* Hexagon needs to go here */}
                     <Hexagon
@@ -85,7 +85,7 @@ function Home() {
                         <text className='hex-text' x='42%' y='60%'>All</text>
                     </Hexagon>
                 </div>
-            </container>
+            </div>
         </section>
     )
 }
