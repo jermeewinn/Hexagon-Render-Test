@@ -3,16 +3,17 @@
 This React Application is to test how to create, render, and style Hexagonal polygons in the extreme off-change one needs to render hexagons into their React web application. 
 
 ## **Table of Contents**
-[Technologies Used](#technologies-used)</br>
-[Installation](#installation)</br>
-[Methods](#methods)</br>
-[Notes to Self](#notes-to-self)</br>
-[Future Development](#future-development)</br>
+**[Technologies Used](#technologies-used)</br>**
+**[Installation](#installation)</br>**
+**[Methods](#methods)</br>**
+**[Notes to Self](#notes-to-self)</br>**
+
 - [Rendering Hexagons via React Hexagon](#1-rendering-hexagons-via-react-hexagon)</br>
-- [Rendering Text in React Hexagon](#2-rendering-text-wi-hexagon-via-react-hexagon)
+- [Rendering Text in React Hexagon](#2-rendering-text-wi-hexagon-via-react-hexagon)</br>
 - [Canva](#3-canva)</br>
 
-[Author](#author)
+**[Future Development](#future-development)</br>**
+**[Author](#author)**
 
 ## **Technologies Used**
 - [React.js](https://reactjs.org/)
