@@ -15,15 +15,20 @@ function Other() {
                 <Hexagon
                     className='hexagon-styled'
                     style={{
-                        stroke: 'black'
+                        stroke: 'black',
                     }}
-                />
+                >
+                    <text className='hex-text' x='25%' y='45%'>Resume</text>
+                    <text className='hex-text' x='27%' y='60%'>Review</text>
+                </Hexagon>
                 <Hexagon
                     className='hexagon-styled'
                     style={{
-                        stroke: 'black'
+                        stroke: 'black',
                     }}
-                />
+                >
+                    <text className='hex-text' x='25%' y='45%'>Resume Review</text>
+                </Hexagon>
             </div>
         </section>
     )

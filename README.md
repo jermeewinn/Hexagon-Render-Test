@@ -1,4 +1,5 @@
 # **Hexagon Render Test**
+
 This React Application is to test how to create, render, and style Hexagonal polygons in the extreme off-change one needs to render hexagons into their React web application. 
 
 ## **Table of Contents**
@@ -7,8 +8,9 @@ This React Application is to test how to create, render, and style Hexagonal pol
 [Methods](#methods)</br>
 [Notes to Self](#notes-to-self)</br>
 [Future Development](#future-development)</br>
-- [React Hexagon](#1-react-hexagon-1)</br>
-- [Canva](#2-canva)</br>
+- [Rendering Hexagons via React Hexagon](#1-rendering-hexagons-via-react-hexagon)</br>
+- [Rendering Text in React Hexagon](#2-rendering-text-wi-hexagon-via-react-hexagon)
+- [Canva](#3-canva)</br>
 
 [Author](#author)
 
@@ -48,7 +50,7 @@ There isn't much on this other than the GitHub repository. The documentation is 
 It was recommended by members of the Slack group chat that I also create objects in Canva, a UI Design website. Visit their website [here](https://www.canva.com/search/templates?q=hexagon).
 
 ## **Notes to Self**
-### **1) React Hexagon**
+### **1) Rendering Hexagons via React Hexagon**
 After some help from friends, I was able to render not just a single hexagon, but also a full hexagon ring. 
 
 **Firstly**, in order to render a hexagon, you will need to set up your component to look like the following:
@@ -80,9 +82,41 @@ It is best if you styled not just each row, but also each individual hexagon. In
 
 Additionally, the **.hex-row** margin-bottom value is negative so that the hexagon rows can slightly overlap each other. If set to greater than/equal to 0, then the rows would align at the hexagons' points.
 
+### **2) Rendering Text w/i Hexagon via React Hexagon**
+Rendering text within a hexagon is a little tricky. In terms of a text box, the hexagon only recognizes one line at a time, and I have yet to figure out how to create a centered text element within the Hexagon. The code for the following image can be found in the **src/components/Other/index.js** file of this repository.
 
+![Hexagon Text](src/assets/Hexagon-Text-Example.png)
 
-### **2) Canva**
+**Consider the hexagon on the right.** Text within the Hexagon isn't rendered past the polygonal borders. I have tried using flex to center multiple lines of text, but no joy. If you have any feedback on how to do this more efficiently than the next method I'm about to show, please feel free to let me know. For reference, the code to render the right hexagon can be found here:
+
+        <Hexagon
+                className='hexagon-styled'
+                style={{
+                stroke: 'black',
+                }}
+        >
+                <text className='hex-text' x='25%' y='45%'>Resume Review</text>
+        </Hexagon>
+
+Notice that we are now inputing text into the Hexagon, so the Hexagon object won't be self-closing as shown earlier in this README.
+
+**Consider the hexagon on the left.** Centering multiple lines of text within the hexagon is going to involve a lot of trial and error. You will need to position each individual word within the hexagon based on an X/Y-axis. Positioning is based on the beginning of the word. Different sized words are going to require different X- and Y-values, so take your time to figure out what works for you. The code to render the hexagon on the left can be found here:
+
+        <Hexagon
+                className='hexagon-styled'
+                style={{
+                stroke: 'black',
+                }}
+        >
+                <text className='hex-text' x='25%' y='45%'>Resume</text>
+                <text className='hex-text' x='27%' y='60%'>Review</text>
+        </Hexagon>
+
+If you were to check out the code in **src/components/Home/index.js**, you will see the variance in X- and Y-values with different sized words for each hexagon. 
+
+**IMPORTANT NOTE** Don't forget to style the hexagon text, otherwise the text within the hexagons would appear microscopic.
+
+### **3) Canva**
 Canva could be a good alternative to work with *if* you pay for their pro subscription. Otherwise, their free options are pretty limited, especially working with Hexagons. This would be useful if one were more concentrated on creating UX/UI elements, and if you had money to go with it.
 
 ## **Future Development**
