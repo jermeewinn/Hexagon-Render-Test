@@ -104,7 +104,8 @@ Text within the Hexagon isn't rendered past the polygonal borders. I have tried 
 
 Notice that we are now inputing text into the Hexagon, so the Hexagon object won't be self-closing as shown earlier in this README.
 
-**Consider the hexagon on the left.</br> ** Centering multiple lines of text within the hexagon is going to involve a lot of trial and error. You will need to position each individual word within the hexagon based on an X/Y-axis. Positioning is based on the beginning of the word. Different sized words are going to require different X- and Y-values, so take your time to figure out what works for you. The code to render the hexagon on the left can be found here:
+**Consider the hexagon on the left.</br>** 
+Centering multiple lines of text within the hexagon is going to involve a lot of trial and error. You will need to position each individual word within the hexagon based on an X/Y-axis. Positioning is based on the beginning of the word. Different sized words are going to require different X- and Y-values, so take your time to figure out what works for you. The code to render the hexagon on the left can be found here:
 
         <Hexagon
                 className='hexagon-styled'
