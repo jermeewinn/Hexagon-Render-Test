@@ -1,6 +1,6 @@
 # **Hexagon Render Test**
 
-This React Application is to test how to create, render, and style Hexagonal polygons in the extreme off-change one needs to render hexagons into their React web application. 
+This React Application is to test how to create, render, and style Hexagonal polygons in the extreme off-change one needs to render hexagons into their React web application. Credit to rexxars and rplanelles for creating the react-hexagon repository. Link under **Technologies Used**.
 
 ## **Table of Contents**
 **[Technologies Used](#technologies-used)</br>**
@@ -21,7 +21,7 @@ This React Application is to test how to create, render, and style Hexagonal pol
 - [React-Router-DOM](https://v5.reactrouter.com/web/guides/quick-start)
 - [JavaScript](https://www.javascript.com/)
 - [React-Helmet](https://github.com/nfl/react-helmet)
-- [React Hexagon](https://github.com/rexxars/react-hexagon)
+- [React-Hexagon](https://github.com/rexxars/react-hexagon)
 
 ## **Installation**
 If you want to recreate this repository for your own purposes, simply follow the following steps in your Text Editor:
@@ -125,4 +125,6 @@ Canva could be a good alternative to work with *if* you pay for their pro subscr
 - Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object.
 
 ## **Author**
-This application was created by [Jeremy Huynh](https://www.linkedin.com/in/jeremy-huynh/). For inquries, please reach out at jeahuynh18@gmail.com.
+This application was created by Jeremy Huynh. If you have any inquries, my socials can be found below:
+- **[LinkedIn Profile](https://www.linkedin.com/in/jeremy-huynh/)**
+- **[GitHub Repository](https://github.com/jermeewinn)**
