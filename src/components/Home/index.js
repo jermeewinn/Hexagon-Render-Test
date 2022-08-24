@@ -6,13 +6,13 @@ function Home() {
     
     return(
         <section>
-            <container id='identification' className='banner'>
+            <container id='identification' >
                 <div>
                     <Helmet>
                         <title>Hexagon Render Test | Home</title>
                     </Helmet>
                 </div>
-                <div>
+                <div className='banner'>
                     <h1>Home</h1>
                 </div>
             </container>

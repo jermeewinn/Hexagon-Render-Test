@@ -12,9 +12,10 @@ code {
     monospace;
 }
 
-/* .banner {
-  margin-bottom: 100px;
-} */
+.banner {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 .hex-ring {
   margin-top: 50px;
@@ -25,6 +26,11 @@ code {
   margin-left: 25px;
   min-width: 100px;
   max-width: 250px;
+}
+
+.hexagon-styled:hover {
+  opacity: 0.4;
+  transform: scale(1.05)
 }
 
 /* margin-bottom is set to a negative value so that the hexagon rows can overlap.
