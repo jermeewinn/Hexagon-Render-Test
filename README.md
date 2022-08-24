@@ -127,6 +127,7 @@ Canva could be a good alternative to work with *if* you pay for their pro subscr
 ## **Future Development**
 - Figure out a way to add pictures, text, clickable text, etc. to individual Hexagons. 
 - Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object.
+- Figure out a way to enable href links through the hexagon. The source code from the demo doesn't seem to be working.
 
 ## **Author**
 This application was created by Jeremy Huynh. If you have any inquries, my socials can be found below:

@@ -80,6 +80,7 @@ function Home() {
                         style={{
                             stroke: 'black',
                         }}
+                        href='/other'
                     >
                         <text className='hex-text' x='35%' y='45%'>View</text>
                         <text className='hex-text' x='42%' y='60%'>All</text>
