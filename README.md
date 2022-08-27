@@ -10,9 +10,10 @@ Credit to rexxars and rplanelles for creating the [React-Hexagon GitHub reposito
 **[Methods](#methods)</br>**
 **[Notes to Self](#notes-to-self)</br>**
 
-- [Rendering Hexagons via React Hexagon](#1-rendering-hexagons-via-react-hexagon)</br>
-- [Rendering Text in React Hexagon](#2-rendering-text-wi-hexagon-via-react-hexagon)</br>
-- [Canva](#3-canva)</br>
+- [Rendering Hexagons via React Hexagon](#1-rendering-hexagons-via-react-hexagon)
+- [Rendering Text in React Hexagon](#2-rendering-text-wi-hexagon-via-react-hexagon)
+- [Enabling Links in Hexagons](#3-enabling-links-in-hexagons)
+- [Canva](#4-canva)
 
 **[Future Development](#future-development)</br>**
 **[Author](#author)**
@@ -96,7 +97,7 @@ Text within the Hexagon isn't rendered past the polygonal borders. I have tried 
         <Hexagon
                 className='hexagon-styled'
                 style={{
-                stroke: 'black',
+                        stroke: 'black',
                 }}
         >
                 <text className='hex-text' x='25%' y='45%'>Resume Review</text>
@@ -110,7 +111,7 @@ Centering multiple lines of text within the hexagon is going to involve a lot of
         <Hexagon
                 className='hexagon-styled'
                 style={{
-                stroke: 'black',
+                        stroke: 'black',
                 }}
         >
                 <text className='hex-text' x='25%' y='45%'>Resume</text>
@@ -121,13 +122,32 @@ If you were to check out the code in **src/components/Home/index.js**, you will 
 
 **IMPORTANT NOTE:** Don't forget to style the hexagon text, otherwise the text within the hexagons would appear microscopic.
 
-### **3) Canva**
+### **3) Enabling Links in Hexagons**
+According to the code provided in the React Hexagon GitHub repository, inserting links into your hexagons are as simple as including an *href* property within the object tag as showin in the following code:
+
+        <Hexagon
+                className='hexagon-styled'
+                style={{
+                        stroke: 'black',
+                }}
+                href='/other'
+        >
+                <text className='hex-text' x='35%' y='45%'>View</text>
+                <text className='hex-text' x='42%' y='60%'>All</text>
+        </Hexagon>
+
+This will enable the hexagon to link to any website or part of a website with a valid http address. In this instance, I've linked it to the "Other" page of the application, so that it will navigate to said page. This can be done with both internal & external links. 
+
+Something to note, however, is that the clickable area of which a user can engage the href link is only limited to the the visible border of the shape, not the entire shape as a whole. Will update on that once I've figured it out.
+
+### **4) Canva**
 Canva could be a good alternative to work with *if* you pay for their pro subscription. Otherwise, their free options are pretty limited, especially working with Hexagons. This would be useful if one were more concentrated on creating UX/UI elements, and if you had money to go with it.
 
 ## **Future Development**
 - Figure out a way to add pictures, text, clickable text, etc. to individual Hexagons. 
 - Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object.
-- Figure out a way to enable href links through the hexagon. The source code from the demo doesn't seem to be working.
+- ~~Figure out a way to enable href links through the hexagon. The source code from the demo doesn't seem to be working.~~
+- Figure out a way to enable href links throughout the whole hexagon. As of right now, href links can only be engaged when clicking on the visible borders of the polygon. 
 
 ## **Author**
 This application was created by Jeremy Huynh. If you have any inquries, my socials can be found below:
