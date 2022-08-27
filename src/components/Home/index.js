@@ -65,7 +65,7 @@ function Home() {
                         <text className='hex-text' x='35%' y='60%'>Prep</text>
                     </Hexagon>
                 </div>
-                <div className=' hex-row d-flex justify-content-center'>
+                <div className='hex-row d-flex justify-content-center'>
                     <Hexagon
                         className='hexagon-styled'
                         style={{
@@ -79,8 +79,10 @@ function Home() {
                         className='hexagon-styled'
                         style={{
                             stroke: 'black',
+                            fill: 'white'
                         }}
                         href='/other'
+                        target='_blank'
                     >
                         <text className='hex-text' x='35%' y='45%'>View</text>
                         <text className='hex-text' x='42%' y='60%'>All</text>
