@@ -82,7 +82,7 @@ function Home() {
                             fill: 'white'
                         }}
                         href='/other'
-                        target='_blank'
+                        target='_self'
                     >
                         <text className='hex-text' x='35%' y='45%'>View</text>
                         <text className='hex-text' x='42%' y='60%'>All</text>

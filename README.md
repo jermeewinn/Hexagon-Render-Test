@@ -138,7 +138,24 @@ According to the code provided in the React Hexagon GitHub repository, inserting
 
 This will enable the hexagon to link to any website or part of a website with a valid http address. In this instance, I've linked it to the "Other" page of the application, so that it will navigate to said page. This can be done with both internal & external links. 
 
-Something to note, however, is that the clickable area of which a user can engage the href link is only limited to the the visible border of the shape, not the entire shape as a whole. Will update on that once I've figured it out.
+Something to note, however, is that the clickable area of which a user can engage the href link is only limited to the the visible border of the shape, not the entire shape as a whole. In order to remedy this, be sure to add an extra "fill" value within the style array. In the React Hexagon demo, it's set to a background photo, but you can set it to a color or hex key value of need be. This will greatly increase the clickable area to engage the href link. The only issue now is that it won't engage when clicking on the text.
+
+Final code should look like this:
+
+        <Hexagon
+                className='hexagon-styled'
+                style={{
+                        stroke: 'black',
+                        fill: 'white'
+                }}
+                href='/other'
+                target='_blank'
+        >
+                <text className='hex-text' x='35%' y='45%' href='/other'>View</text>
+                <text className='hex-text' x='42%' y='60%' href='/other'>All</text>
+        </Hexagon>
+
+Of course, you can edit your target attributes to whatever you want, as you would through HTML5. More information on this can be found [here](https://www.w3schools.com/tags/att_a_target.asp).
 
 ### **4) Canva**
 Canva could be a good alternative to work with *if* you pay for their pro subscription. Otherwise, their free options are pretty limited, especially working with Hexagons. This would be useful if one were more concentrated on creating UX/UI elements, and if you had money to go with it.
