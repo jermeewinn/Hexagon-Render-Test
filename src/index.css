@@ -19,10 +19,14 @@ code {
 
 .hex-left {
   margin-top: 50px;
+  transform: translate(-25%)
 }
 
 .hex-right {
   margin-top: 50px;
+  height: 100%;
+  margin-right: 0px;
+  transform: translate(25%, -200px)
 }
 
 .hexagon-styled {
