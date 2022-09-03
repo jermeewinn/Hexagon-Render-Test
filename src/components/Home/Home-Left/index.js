@@ -3,7 +3,7 @@ import Hexagon from 'react-hexagon';
 
 const HomeLeft = () => {
     return(
-        <div id='hex-ring' className='hex-ring'>
+        <div id='hex-ring' className='hex-left'>
             <div id='root' className='hex-row d-flex justify-content-center'>
                 {/* Hexagon needs to go here */}
                 <Hexagon

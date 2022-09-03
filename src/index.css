@@ -17,7 +17,11 @@ code {
   margin-bottom: 50px;
 }
 
-.hex-ring {
+.hex-left {
+  margin-top: 50px;
+}
+
+.hex-right {
   margin-top: 50px;
 }
 

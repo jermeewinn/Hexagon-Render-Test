@@ -1,8 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Hexagon from 'react-hexagon';
+// import Hexagon from 'react-hexagon';
 import HomeLeft from './Home-Left';
-
+import HomeRight from './Home-Right';
 
 function Home() {
     
@@ -18,7 +18,8 @@ function Home() {
                     <h1>Home</h1>
                 </div>
             </container>
-            <HomeLeft/>
+            <HomeLeft />
+            <HomeRight />
         </section>
     )
 }
