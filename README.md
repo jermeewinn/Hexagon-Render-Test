@@ -19,12 +19,12 @@ Credit to rexxars and rplanelles for creating the [React-Hexagon GitHub reposito
 **[Author](#author)**
 
 ## **Technologies Used**
-- [React.js](https://reactjs.org/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
-- [React-Router-DOM](https://v5.reactrouter.com/web/guides/quick-start)
-- [JavaScript](https://www.javascript.com/)
-- [React-Helmet](https://github.com/nfl/react-helmet)
-- [React-Hexagon](https://github.com/rexxars/react-hexagon)
+[React.js](https://reactjs.org/)</br>
+[React Bootstrap](https://react-bootstrap.github.io/)</br>
+[React-Router-DOM](https://v5.reactrouter.com/web/guides/quick-start)</br>
+[JavaScript](https://www.javascript.com/)</br>
+[React-Helmet](https://github.com/nfl/react-helmet)</br>
+[React-Hexagon](https://github.com/rexxars/react-hexagon)</br>
 
 ## **Installation**
 If you want to recreate this repository for your own purposes, simply follow the following steps in your Text Editor:
@@ -164,7 +164,7 @@ Canva could be a good alternative to work with *if* you pay for their pro subscr
 - Figure out a way to add pictures, text, clickable text, etc. to individual Hexagons. 
 - Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object.
 - ~~Figure out a way to enable href links through the hexagon. The source code from the demo doesn't seem to be working.~~
-- Figure out a way to enable href links throughout the whole hexagon. As of right now, href links can only be engaged when clicking on the visible borders of the polygon. 
+- ~~Figure out a way to enable href links throughout the whole hexagon. As of right now, href links can only be engaged when clicking on the visible borders of the polygon.~~ 
 
 ## **Author**
 This application was created by Jeremy Huynh. If you have any inquries, my socials can be found below:
