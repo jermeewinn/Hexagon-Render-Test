@@ -1,9 +1,16 @@
 import React from 'react';
 
-const HomeRight = () => {
+// Upon click of hexagon, the description of the service should appear in the Home-Right component.
+const HomeRight = ({ service }) => {
+
+    const [textShow, setTextShow] = React.useState(false);
+    
     return(
         <div className='hex-right' >
-            Lorem ipsum text and such.
+            {/* {services.map((service, i) => (
+
+            ))} */}
+            Lorem ipsum and such.
         </div>
     )
 };

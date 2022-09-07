@@ -23,7 +23,9 @@ const HomeLeft = () => {
         {
             name: 'Cover Letter'
         }
-    ])
+    ]);
+
+    // For the hex-services array, you may need to create a singular <Hexagon> template to 
     return(
         <div id='hex-ring' className='hex-left'>
             <div id='root' className='hex-row d-flex justify-content-center'>
