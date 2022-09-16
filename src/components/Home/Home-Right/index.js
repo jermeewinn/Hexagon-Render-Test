@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Upon click of hexagon, the description of the service should appear in the Home-Right component.
 const HomeRight = ({ service }) => {
 
-    const [textShow, setTextShow] = React.useState(false);
+    const [textShow, setTextShow] = useState();
     
     return(
         <div className='hex-right' >
