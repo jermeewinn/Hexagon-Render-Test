@@ -34,7 +34,6 @@ function HexRing() {
         <container>
             <div id='hex-ring' className='hex-left'>
                 <div id='root' className='hex-row d-flex justify-content-center'>
-                    {/* Hexagon needs to go here */}
                     <Hexagon
                         className='hexagon-styled'
                         onClick={() => setText('Hello.')}
@@ -61,9 +60,10 @@ function HexRing() {
                 <div className='hex-row d-flex justify-content-center'>
                     <Hexagon
                         className='hexagon-styled'
-                        
+                        onClick={() => setText('Sup my man.')}
                         style={{
                             stroke: 'black',
+                            fill: 'white'
                         }}
                     >
                         <text className='hex-text' x='27%' y='45%'>Career</text>
@@ -80,6 +80,7 @@ function HexRing() {
                         className='hexagon-styled'
                         style={{
                             stroke: 'black',
+                            fill: 'white'
                         }}
                     >
                         <text className='hex-text' x='25%' y='45%'>Interview</text>
@@ -91,6 +92,7 @@ function HexRing() {
                         className='hexagon-styled'
                         style={{
                             stroke: 'black',
+                            fill: 'white'
                         }}
                     >
                         <text className='hex-text' x='15%' y='45%'>Job Search</text>
@@ -119,6 +121,8 @@ function HexRing() {
     //NOTE TO SELF: When playing around with anything to do with Hexagon interactivity (i.e. ), be sure to set
     //the fill value to the color of the background. This way, the Hexagon as a whole will pick up your actions,
     //whether it be onClick, href/target, etc.
+
+    //Only thing to figure out now is to style the max-width values for hex-right w/o moving the text to default position.
 };
 
 export default HexRing;

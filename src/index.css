@@ -28,6 +28,7 @@ code {
   margin-right: 0px;
   transform: translate(25%, -200px);
   text-align: center;
+  /* max-width: 90px; */
 }
 
 .hexagon-styled {
