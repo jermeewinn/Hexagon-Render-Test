@@ -115,14 +115,13 @@ function HexRing() {
             <div className='hex-right'>
                 {text}
             </div>
-            
         </container>
-    )
-    //NOTE TO SELF: When playing around with anything to do with Hexagon interactivity (i.e. ), be sure to set
-    //the fill value to the color of the background. This way, the Hexagon as a whole will pick up your actions,
-    //whether it be onClick, href/target, etc.
-
-    //Only thing to figure out now is to style the max-width values for hex-right w/o moving the text to default position.
+    );
 };
+//NOTE TO SELF: When playing around with anything to do with Hexagon interactivity (i.e. ), be sure to set
+//the fill value to the color of the background. This way, the Hexagon as a whole will pick up your actions,
+//whether it be onClick, href/target, etc.
+
+//Only thing to figure out now is to style the max-width values for hex-right w/o moving the text to default position.
 
 export default HexRing;
