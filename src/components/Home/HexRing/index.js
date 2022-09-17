@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Hexagon from 'react-hexagon';
 
-function HomeLeft() {
+function HexRing() {
     const [services] = useState([
         {
             name: 'Resume Review',
@@ -109,4 +109,4 @@ function HomeLeft() {
     )
 };
 
-export default HomeLeft;
+export default HexRing;
