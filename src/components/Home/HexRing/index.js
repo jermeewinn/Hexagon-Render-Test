@@ -47,7 +47,7 @@ function HexRing() {
                     </Hexagon>
                     <Hexagon
                         className='hexagon-styled'
-                        onClick={() => setText('Lorem ipsum.')}
+                        onClick={() => setText('The future of job hunting is online, and Linkedin is a major part of that. We will help you create and configure your LinkedIn profile so that you can start job hunting quickly and efficiently.')}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -60,7 +60,7 @@ function HexRing() {
                 <div className='hex-row d-flex justify-content-center'>
                     <Hexagon
                         className='hexagon-styled'
-                        onClick={() => setText('Sup my man.')}
+                        onClick={() => setText("Don't know what you want to do? We'll schedule a consultation with you to get an idea of where you're at and where you want to go.")}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -78,6 +78,7 @@ function HexRing() {
                     />
                     <Hexagon
                         className='hexagon-styled'
+                        onClick={() => setText("Got something on the books? That's great! We'll give you the interview prep you need so that you don't go into the interview lost. We will give you a mock interview so that you can mentally engage")}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -90,13 +91,14 @@ function HexRing() {
                 <div className='hex-row d-flex justify-content-center'>
                     <Hexagon
                         className='hexagon-styled'
+                        onClick={() => setText('If the job application asks for a cover letter, submit one. We can work with you in going over key aspects on formatting, composition, and delivery of your cover letter.')}
                         style={{
                             stroke: 'black',
                             fill: 'white'
                         }}
                     >
-                        <text className='hex-text' x='15%' y='45%'>Job Search</text>
-                        <text className='hex-text' x='25%' y='60%'>Strategy</text>
+                        <text className='hex-text' x='13%' y='45%'>Cover Letter</text>
+                        <text className='hex-text' x='10%' y='60%'>Composition</text>
                     </Hexagon>
                     <Hexagon
                         className='hexagon-styled'
