@@ -17,18 +17,19 @@ code {
   margin-bottom: 50px;
 }
 
-.hex-left {
+.hexagons {
   margin-top: 50px;
-  transform: translate(-25%)
+  /* transform: translate(-25%) */
 }
 
-.hex-right {
-  margin-top: 50px;
+.text {
+  margin-top: 100px;
   height: 100%;
-  margin-right: 0px;
-  transform: translate(25%, -200px);
+  /* margin-right: 0px; */
+  /* transform: translate(25%, -200px); */
   text-align: center;
-  /* max-width: 90px; */
+  min-width: 100px;
+  max-width: 270px;
 }
 
 .hexagon-styled {

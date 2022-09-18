@@ -31,12 +31,12 @@ function HexRing() {
 
     // For the hex-services array, you may need to create a singular <Hexagon> template to 
     return(
-        <container>
-            <div id='hex-ring' className='hex-left'>
+        <div className='d-flex'>
+            <div id='hex-ring' className='hexagons col-md-6'>
                 <div id='root' className='hex-row d-flex justify-content-center'>
                     <Hexagon
                         className='hexagon-styled'
-                        onClick={() => setText('Hello.')}
+                        onClick={() => setText('Have one of our consultants take a look at your resume, and work with you in transforming it into a key that will open doors for your future job hunt. We optimize for ATS so that you can get your foot in more doors.')}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -112,10 +112,10 @@ function HexRing() {
                     </Hexagon>
                 </div>
             </div>
-            <div className='hex-right'>
+            <div className='text col-md-6'>
                 {text}
             </div>
-        </container>
+        </div>
     );
 };
 //NOTE TO SELF: When playing around with anything to do with Hexagon interactivity (i.e. ), be sure to set
