@@ -162,9 +162,10 @@ Canva could be a good alternative to work with *if* you pay for their pro subscr
 
 ## **Future Development**
 - ~~Figure out a way to add pictures, text, clickable text, etc. to individual Hexagons.~~
-- Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object. (This will be done via useState Hooks)
 - ~~Figure out a way to enable href links through the hexagon. The source code from the demo doesn't seem to be working.~~
 - ~~Figure out a way to enable href links throughout the whole hexagon. As of right now, href links can only be engaged when clicking on the visible borders of the polygon.~~ 
+- Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object. (This will be done via useState Hooks)
+- Figure out a way to show correlating titles to text sections w/ useState Hooks and onClick event handlers.
 
 ## **Author**
 This application was created by Jeremy Huynh. If you have any inquries, my socials can be found below:
