@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Hexagon from 'react-hexagon';
+import HexText from '../HexText';
+
 
 function HexRing() {
     // const [text, setText] = useState('Here are some of the services we provide to our clients.');
+
     const [services] = useState([
         {
             name: 'Our Services',
@@ -36,7 +39,25 @@ function HexRing() {
         }
     ]);
 
-    const 
+    // We're going to need to map through the array to enable names and descriptions. First create a function that does so.
+    // const renderText = id => {
+    //     switch(id) {
+    //         case 1: 
+    //             return(
+    //                 <>
+    //                     <h3>Resume Review</h3>
+    //                     <div>Lorem Ipsum</div>
+    //                 </>
+    //             );
+    //         default: 
+    //             return(
+    //                 <>
+    //                     <h3>Resume Review</h3>
+    //                     <div>Lorem Ipsum</div>
+    //                 </>
+    //         );
+    //     };
+    // };
 
     // For the hex-services array, you may need to create a singular <Hexagon> template to 
     return(
@@ -46,7 +67,7 @@ function HexRing() {
                     <Hexagon
                         className='hexagon-styled'
                         // onClick={() => setText('Have one of our consultants take a look at your resume, and work with you in transforming it into a key that will open doors for your future job hunt. We optimize for ATS so that you can get your foot in more doors.')}
-                        onClick={() => }
+                        onClick={HexText}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -57,7 +78,7 @@ function HexRing() {
                     </Hexagon>
                     <Hexagon
                         className='hexagon-styled'
-                        onClick={() => setText('The future of job hunting is online, and Linkedin is a major part of that. We will help you create and configure your LinkedIn profile so that you can start job hunting quickly and efficiently.')}
+                        // onClick={() => setText('The future of job hunting is online, and Linkedin is a major part of that. We will help you create and configure your LinkedIn profile so that you can start job hunting quickly and efficiently.')}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -70,7 +91,7 @@ function HexRing() {
                 <div className='hex-row d-flex justify-content-center'>
                     <Hexagon
                         className='hexagon-styled'
-                        onClick={() => setText("Don't know what you want to do? We'll schedule a consultation with you to get an idea of where you're at and where you want to go.")}
+                        // onClick={() => setText("Don't know what you want to do? We'll schedule a consultation with you to get an idea of where you're at and where you want to go.")}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -88,7 +109,7 @@ function HexRing() {
                     />
                     <Hexagon
                         className='hexagon-styled'
-                        onClick={() => setText("Got something on the books? That's great! We'll give you the interview prep you need so that you don't go into the interview lost. We will give you a mock interview so that you can mentally engage")}
+                        // onClick={() => setText("Got something on the books? That's great! We'll give you the interview prep you need so that you don't go into the interview lost. We will give you a mock interview so that you can mentally engage")}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -101,7 +122,7 @@ function HexRing() {
                 <div className='hex-row d-flex justify-content-center'>
                     <Hexagon
                         className='hexagon-styled'
-                        onClick={() => setText('If the job application asks for a cover letter, submit one. We can work with you in going over key aspects on formatting, composition, and delivery of your cover letter.')}
+                        // onClick={() => setText('If the job application asks for a cover letter, submit one. We can work with you in going over key aspects on formatting, composition, and delivery of your cover letter.')}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -125,7 +146,7 @@ function HexRing() {
                 </div>
             </div>
             <div className='text col-md-6'>
-                {text}
+                <HexText/>
             </div>
         </div>
     );
