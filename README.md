@@ -157,15 +157,18 @@ Final code should look like this:
 
 Of course, you can edit your target attributes to whatever you want, as you would through HTML5. More information on this can be found [here](https://www.w3schools.com/tags/att_a_target.asp).
 
-### **4) Canva**
+### **4) useState Hooks**
+Integrating React useState Hooks is a bit of process. 
+
+### **5) Canva**
 Canva could be a good alternative to work with *if* you pay for their pro subscription. Otherwise, their free options are pretty limited, especially working with Hexagons. This would be useful if one were more concentrated on creating UX/UI elements, and if you had money to go with it.
 
 ## **Future Development**
 - ~~Figure out a way to add pictures, text, clickable text, etc. to individual Hexagons.~~
 - ~~Figure out a way to enable href links through the hexagon. The source code from the demo doesn't seem to be working.~~
 - ~~Figure out a way to enable href links throughout the whole hexagon. As of right now, href links can only be engaged when clicking on the visible borders of the polygon.~~ 
-- Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object. (This will be done via useState Hooks)
-- Figure out a way to show correlating titles to text sections w/ useState Hooks and onClick event handlers.
+- ~~Figure out a way to enable clicking of a hexagon to correlate to a text shown in the next object. (This will be done via useState Hooks)~~
+- ~~Figure out a way to show correlating titles to text sections w/ useState Hooks and onClick event handlers.~~
 
 ## **Author**
 This application was created by Jeremy Huynh. If you have any inquries, my socials can be found below:

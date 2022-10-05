@@ -48,7 +48,7 @@ function HexRing() {
         // This function will need an input parameter that pulls the ID.
         setCurrentName(services[id].name);
         setCurrentDescription(services[id].description);
-    }
+    };
 
     // NOTE TO SELF: talk to yourself in plain english what you're trying to do. If you're using a verb, you're likely going to need to 
     // create a function. A noun is a const or a function or a variable. Start what you need to do and broadstrokes back to specifics.

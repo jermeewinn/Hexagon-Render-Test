@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Define what data you want to present, and how to present it.
 function HexText({ name, description }) {
     return(
         <>
@@ -8,7 +9,5 @@ function HexText({ name, description }) {
         </>
     )
 };
-
-// Ideally should ask for what data to present, and how to present it.
 
 export default HexText;
