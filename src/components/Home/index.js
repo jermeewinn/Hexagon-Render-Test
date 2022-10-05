@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 // import Hexagon from 'react-hexagon';
-import HexRing from './HexRing';
+import HexRing from './Hex-Ring';
 
 
 function Home() {
