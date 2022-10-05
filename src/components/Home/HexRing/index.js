@@ -4,41 +4,44 @@ import HexText from '../HexText';
 
 
 function HexRing() {
-    // const [text, setText] = useState('Here are some of the services we provide to our clients.');
+    
+    const [currentName, setCurrentName] = useState('Our Services');
+    const [currentDescription, setCurrentDescription] = useState('Here are some of the services we provide to our clients.');
 
-    const [services] = useState([
+    const services = [
         {
-            name: 'Our Services',
             id: 0,
+            name: 'Our Services',
             description: 'Here are some of the services we provide to our clients.'
         },
         {
+            id: 1, 
             name: 'Resume Review', 
-            id: 1,   
             description: 'Have one of our consultants take a look at your resume, and work with you in transforming it into a key that will open doors for your future job hunt. We optimize for ATS so that you can get your foot in more doors.',
         },
         {
-            name: 'LinkedIn Revision',
             id: 2,
+            name: 'LinkedIn Revision',
             description: 'The future of job hunting is online, and Linkedin is a major part of that. We will help you create and configure your LinkedIn profile so that you can start job hunting quickly and efficiently.',
         },
         {
-            name: 'Career Consulting',
             id: 3,
+            name: 'Career Consulting',
             description: 'If the job application asks for a cover letter, submit one. We can work with you in going over key aspects on formatting, composition, and delivery of your cover letter.',
         },
         {
-            name: 'Interview Prep',
             id: 4,
+            name: 'Interview Prep',
             description: "Got something on the books? That's great! We'll give you the interview prep you need so that you don't go into the interview lost. We will give you a mock interview so that you can mentally engage",
         },
-        {
-            name: 'Cover Letter',
+        {   
             id: 5,
+            name: 'Cover Letter',
             description: 'If the job application asks for a cover letter, submit one. We can work with you in going over key aspects on formatting, composition, and delivery of your cover letter.',
         }
-    ]);
+    ];
 
+    
     // We're going to need to map through the array to enable names and descriptions. First create a function that does so.
     // const renderText = id => {
     //     switch(id) {
@@ -59,6 +62,16 @@ function HexRing() {
     //     };
     // };
 
+    // Create a function that describes how to change the text.
+    // WHen you click the Hexagon, you want to change the text in the textbox to the object w/ corresponding ID.
+    function changeText(id) {
+        // This function will need an input parameter that pulls the ID.
+        setCurrentName(services[id].name);
+        setCurrentDescription(services[id].description);
+    }
+    // NOTE TO SELF: talk to yourself in plain english what you're trying to do. If you're using a verb, you're likely going to need to 
+    // create a function. A noun is a const or a function or a variable. Start what you need to do and broadstrokes back to specifics.
+
     // For the hex-services array, you may need to create a singular <Hexagon> template to 
     return(
         <div className='d-flex'>
@@ -67,7 +80,7 @@ function HexRing() {
                     <Hexagon
                         className='hexagon-styled'
                         // onClick={() => setText('Have one of our consultants take a look at your resume, and work with you in transforming it into a key that will open doors for your future job hunt. We optimize for ATS so that you can get your foot in more doors.')}
-                        onClick={HexText}
+                        onClick={() => changeText(1)}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -79,6 +92,7 @@ function HexRing() {
                     <Hexagon
                         className='hexagon-styled'
                         // onClick={() => setText('The future of job hunting is online, and Linkedin is a major part of that. We will help you create and configure your LinkedIn profile so that you can start job hunting quickly and efficiently.')}
+                        onClick={() => changeText(2)}
                         style={{
                             stroke: 'black',
                             fill: 'white'
@@ -146,7 +160,7 @@ function HexRing() {
                 </div>
             </div>
             <div className='text col-md-6'>
-                <HexText/>
+                <HexText name={currentName} description={currentDescription} />
             </div>
         </div>
     );
