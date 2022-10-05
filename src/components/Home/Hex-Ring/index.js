@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Hexagon from 'react-hexagon';
-import HexText from '../HexText';
+import HexText from '../Hex-Text';
 
 
 function HexRing() {
@@ -52,8 +52,6 @@ function HexRing() {
 
     // NOTE TO SELF: talk to yourself in plain english what you're trying to do. If you're using a verb, you're likely going to need to 
     // create a function. A noun is a const or a function or a variable. Start what you need to do and broadstrokes back to specifics.
-
-    // For the hex-services array, you may need to create a singular <Hexagon> template to 
     return(
         <div className='d-flex'>
             <div id='hex-ring' className='hexagons col-md-6'>

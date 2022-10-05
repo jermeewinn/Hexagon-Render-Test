@@ -13,7 +13,8 @@ Credit to rexxars and rplanelles for creating the [React-Hexagon GitHub reposito
 - [Rendering Hexagons via React Hexagon](#1-rendering-hexagons-via-react-hexagon)
 - [Rendering Text in React Hexagon](#2-rendering-text-wi-hexagon-via-react-hexagon)
 - [Enabling Links in Hexagons](#3-enabling-links-in-hexagons)
-- [Canva](#4-canva)
+- [React useState Hooks](#4-react-use-state-hooks)
+- [Canva](#5-canva)
 
 **[Future Development](#future-development)</br>**
 **[Author](#author)**
@@ -157,8 +158,59 @@ Final code should look like this:
 
 Of course, you can edit your target attributes to whatever you want, as you would through HTML5. More information on this can be found [here](https://www.w3schools.com/tags/att_a_target.asp).
 
-### **4) useState Hooks**
-Integrating React useState Hooks is a bit of process. 
+### **4) React useState Hooks**
+Integrating React useState Hooks is a bit of process. First things first, you will need to define what data is being presented, and create the template that of the state that will change. In our case, it would be the everything under HexText as seen through the code below:
+
+        import React from 'react';
+
+        // Define what data you want to present, and how to present it.
+        function HexText({ name, description }) {
+                return(
+                        <>
+                                <h3>{name}</h3>
+                                <div>{description}</div>
+                        </>
+                )
+        };
+
+        export default HexText;
+
+Next is create an array of all the names and descriptions of the services rendered by the company. In order to identify them, I've added an ID tag so that they can easily be called on. This can be found in **src/components/HexRing/index.js.**
+
+Here, we'll be using React's [useState Hook](https://reactjs.org/docs/hooks-state.html) to define the state and how the state will change. Since we are changing the state of two different objects, you will need to define the useState for both objects (name & description).
+
+The first step is to define the state, or the page's default configuration.
+
+        const [currentName, setCurrentName] = useState('Our Services');
+        const [currentDescription, setCurrentDescription] = useState('Here are some of the services we provide to our clients.');
+
+This would go at the top of the React component function, and upon loading of the web page, this is what should show as default.
+
+After the array, you would need to define the function that changes the state upon clicking a hexagon so that the name and description correspond to their respective Hexagon clicked. 
+
+        function changeText(id) {
+                // This function will need an input parameter that pulls the ID.
+                setCurrentName(services[id].name);
+                setCurrentDescription(services[id].description);
+        };
+
+Finally, we need to implement an onClick handler that changes the text in the textbox to the object with its corresponding ID, since we've tagged function changeText with "id" in the parenthesis. An example is shown here:
+
+        <Hexagon
+                className='hexagon-styled'
+                onClick={() => changeText(1)}
+                style={{
+                        stroke: 'black',
+                        fill: 'white'
+                }}
+        >
+                <text className='hex-text' x='25%' y='45%'>Resume</text>
+                <text className='hex-text' x='27%' y='60%'>Review</text>
+        </Hexagon>
+
+onClick={() => changeText(1)} will return the name and description as defined in the array under ID 1 as shown in your defined text component(HexText).
+
+**IMPORTANT:** The best way to think about this is to talk to yourself in plain English what you're trying to do. If you're using a verb, you're likely going to need to create a function. If you're using a noun, you're going to need to create a constant or a variable. Start with what you need to do, and then broadstrokes back to the specifics.
 
 ### **5) Canva**
 Canva could be a good alternative to work with *if* you pay for their pro subscription. Otherwise, their free options are pretty limited, especially working with Hexagons. This would be useful if one were more concentrated on creating UX/UI elements, and if you had money to go with it.
