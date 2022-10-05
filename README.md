@@ -13,7 +13,7 @@ Credit to rexxars and rplanelles for creating the [React-Hexagon GitHub reposito
 - [Rendering Hexagons via React Hexagon](#1-rendering-hexagons-via-react-hexagon)
 - [Rendering Text in React Hexagon](#2-rendering-text-wi-hexagon-via-react-hexagon)
 - [Enabling Links in Hexagons](#3-enabling-links-in-hexagons)
-- [React useState Hooks](#4-react-use-state-hooks)
+- [React useState Hooks](#4-react-usestate-hooks)
 - [Canva](#5-canva)
 
 **[Future Development](#future-development)</br>**
