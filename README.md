@@ -182,7 +182,7 @@ Here, we'll be using React's [useState Hook](https://reactjs.org/docs/hooks-stat
 The first step is to define the state, or the page's default configuration.
 
         const [currentName, setCurrentName] = useState('Our Services');
-        const [currentDescription, setCurrentDescription] = useState('Here are some of the services we provide to our clients.');
+        const [currentDescription, setCurrentDescription] = useState('Here are some of the services we  provide to our clients.');
 
 This would go at the top of the React component function, and upon loading of the web page, this is what should show as default.
 
@@ -208,7 +208,7 @@ Finally, we need to implement an onClick handler that changes the text in the te
                 <text className='hex-text' x='27%' y='60%'>Review</text>
         </Hexagon>
 
-onClick={() => changeText(1)} will return the name and description as defined in the array under ID 1 as shown in your defined text component(HexText).
+**onClick={() => changeText(1)}** will return the name and description as defined in the array under ID 1 as shown in your defined text component(HexText).
 
 **IMPORTANT:** The best way to think about this is to talk to yourself in plain English what you're trying to do. If you're using a verb, you're likely going to need to create a function. If you're using a noun, you're going to need to create a constant or a variable. Start with what you need to do, and then broadstrokes back to the specifics.
 
